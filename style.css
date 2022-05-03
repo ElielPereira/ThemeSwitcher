@@ -1,0 +1,57 @@
+:root {
+	--dark: #292C35;
+	--light: #F1F1F1;
+	--label: #111;
+}
+
+body{
+    margin: 0;
+}
+
+main{
+    background-color: var(--dark);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.toggle-btn{
+    background-color: var(--label);
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* ==== DAY ==== */
+
+main.day{
+    background-color: var(--light);
+    transition: .3s ease;
+}
+
+/*==== NIGHT ====*/
+main.night{
+    background-color: var(--dark);
+    transition: .3s ease;
+}
+
+/*====== MOVIE =======*/
+.ci{
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    background-color: white;
+    border-radius: 50px;
+    transition: ease-in .3s;
+}
+
+main.day .ci{
+    margin-left: 50%;
+}
